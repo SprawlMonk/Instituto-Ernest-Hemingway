@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.flex, .data, .map, .computer-lab, .laboratory, .pool, .soccer-field, .playground, .classroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  padding: 20px;
+}
+
+header {
+  background-color: #66cdaa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-color: #66cdaa;
+}
+
+.text img {
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.gallery img {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2,
+h1 {
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "classroom playground" "soccer-field pool" "laboratory computer-lab";
+}
+
+.text img {
+  width: 25%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.classroom {
+  grid-area: classroom;
+}
+
+.playground {
+  grid-area: playground;
+}
+
+.soccer-field {
+  grid-area: soccer-field;
+}
+
+.pool {
+  grid-area: pool;
+}
+
+.laboratory {
+  grid-area: laboratory;
+}
+
+.computer-lab {
+  grid-area: computer-lab;
+}
+
+.contact {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "map data";
+}
+
+.map {
+  grid-area: map;
+}
+
+.data {
+  grid-area: data;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-areas: "map" "data";
+  }
+
+  .map {
+    grid-area: map;
+  }
+
+  .data {
+    grid-area: data;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 16.6%);
+    grid-template-areas: "classroom" "playground" "soccer-field" "pool" "laboratory" "computer-lab";
+  }
+
+  .text img {
+    width: 75%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10%;
+  }
+
+  .classroom {
+    grid-area: classroom;
+  }
+
+  .playground {
+    grid-area: playground;
+  }
+
+  .soccer-field {
+    grid-area: soccer-field;
+  }
+
+  .pool {
+    grid-area: pool;
+  }
+
+  .laboratory {
+    grid-area: laboratory;
+  }
+
+  .computer-lab {
+    grid-area: computer-lab;
+  }
+
+  header img {
+    width: 45%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

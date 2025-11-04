@@ -1,0 +1,20 @@
+{
+  "name": "instituto-eh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mardonio-Abreu/instituto-eh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mardonio-Abreu/instituto-eh/issues"
+  },
+  "homepage": "https://github.com/Mardonio-Abreu/instituto-eh#readme"
+}

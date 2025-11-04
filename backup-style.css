@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;  
+    font-family:'Roboto',sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+p
+{
+    padding: 20px;
+}
+a
+{
+    text-decoration: none;
+    color: gainsboro;
+     padding:20px;
+}
+
+a:hover
+{
+    color:darkkhaki;
+    background-color:lightseagreen;
+}
+
+a:visited
+{
+    color:bisque;
+}
+
+header
+{
+    background-color: #00ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+body
+{
+    background-color:#00ffff;
+}
+
+nav ul
+{
+    background-color: darkcyan;
+    padding: 20px;
+    display:flex;
+    justify-content:space-around;
+}
+
+footer
+{
+    background-color: darkcyan;
+    padding: 10px;
+    color: gainsboro;
+    display: flex;
+    justify-content: end;
+}
+
+img
+{
+    width: 25%;
+    height:auto;
+    padding:20px;
+    border-radius: 10%;
+}
+
+.gallery img
+{
+    width: 50%;
+    height:auto;
+    padding: 10px;
+}
+.text
+{
+    display:flex;
+    flex-direction: row;
+}
+
+
+h2, h1
+{
+    padding: 20px;
+}
+ 
+ .map
+ {
+    padding: 20px;
+    display:flex;
+    align-content: space-between;
+    align-items: center;
+}
+
+ .gallery 
+ {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 50% 50%;
+     grid-template-areas: "classroom playground"
+                          "soccer-field pool";
+   
+ }
+ 
+ .classroom
+ {
+     grid-area: classroom;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .playground
+ {
+     grid-area: playground;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .soccer-field
+ {
+     grid-area: soccer-field;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .pool
+ {
+     grid-area: pool;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .contact
+ {
+     display:grid;
+     grid-template-rows: 100%;
+     grid-template-columns: 50% 50%;
+     grid-template-areas: "map data";
+ }
+
+ .map
+ {
+     grid-area: map;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+ }
+
+ .data
+ {
+     grid-area: data;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+input[type=text] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
